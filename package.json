@@ -1,0 +1,30 @@
+{
+  "name": "mes-web-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@primeuix/themes": "^1.0.0",
+    "@tanstack/vue-query": "^5.67.1",
+    "@tanstack/vue-query-devtools": "^5.66.9",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "axios": "^1.9.0",
+    "pinia": "^3.0.2",
+    "primeflex": "^4.0.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.3.4",
+    "vue": "^3.5.13",
+    "vue-query": "^1.26.0",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "vite": "^6.3.5"
+  }
+}
