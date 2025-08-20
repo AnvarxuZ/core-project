@@ -44,8 +44,12 @@ const login = async () => {
   v$.value.$touch();
   if (v$.value.$invalid) return;
   loading.value = true;
+  const data = {
+    username: username.value,
+    password: password.value,
+  };
   try {
-    let res = await postRequest("auth/login", { username: username.value, password: password.value });
+    let res = await postRequest("auth/login", data);
     setStorage("access_token", res.access_token);
     router.options?.history?.state.back ? router.back() : router.push("/");
   } catch (e) {
